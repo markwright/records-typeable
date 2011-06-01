@@ -1,7 +1,7 @@
 Name:                records-typeable
 Version:             0.1.0.0
-Synopsis:            Typeable instances for records
-Description:         Typeable instances for the extensible records package. 
+Synopsis:            Typeable and Eq instances for records
+Description:         Typeable and Eq instances for the extensible records package. 
 Homepage:            https://github.com/markwright/records-typeable
 License:             BSD3
 License-file:        LICENSE
@@ -25,5 +25,6 @@ Library
                      kinds == 0.0.*,
                      records == 0.1.*,
                      type-functions == 0.2.*
-  Exposed-modules:   Data.Record.Typeable
+  Exposed-modules:   Data.Record.Typeable,
+                     Data.Record.Eq
   Exposed:           True

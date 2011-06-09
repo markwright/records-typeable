@@ -1,5 +1,8 @@
+-- Copyright (c) 2011, Mark Wright.  All rights reserved.
+
 {-# LANGUAGE FlexibleContexts, FlexibleInstances, StandaloneDeriving, TypeOperators #-}
 
+-- | Eq instances for Data.Record
 module Data.Record.Eq where
 
 import Data.Kind

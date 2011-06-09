@@ -1,5 +1,8 @@
+-- Copyright (c) 2011, Mark Wright.  All rights reserved.
+
 {-# LANGUAGE FlexibleContexts, FlexibleInstances, ScopedTypeVariables, TypeOperators #-}
 
+-- | Typeable instances for Data.Record
 module Data.Record.Typeable where
 
 import Data.TypeFun

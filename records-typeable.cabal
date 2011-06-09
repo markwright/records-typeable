@@ -1,7 +1,8 @@
 Name:                records-typeable
 Version:             0.1.0.0
 Synopsis:            Typeable and Eq instances for records
-Description:         Typeable and Eq instances for the extensible records package. 
+Description:         Typeable and Eq instances for the records package. 
+
 Homepage:            https://github.com/markwright/records-typeable
 License:             BSD3
 License-file:        LICENSE
@@ -16,7 +17,6 @@ build-depends:       base >= 3 && <5
 source-repository    head
   type:              git
   location:          git://github.com/markwright/records-typeable.git
-
 
 Library
   Hs-Source-Dirs:    src

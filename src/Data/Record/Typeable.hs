@@ -1,13 +1,23 @@
 -- Copyright (c) 2011, Mark Wright.  All rights reserved.
 
-{-# LANGUAGE FlexibleContexts, FlexibleInstances, ScopedTypeVariables, TypeOperators #-}
+{-# LANGUAGE DeriveDataTypeable, FlexibleContexts, FlexibleInstances,
+    ScopedTypeVariables, StandaloneDeriving, TypeOperators, 
+    UndecidableInstances #-}
 
 -- | Typeable instances for Data.Record
 module Data.Record.Typeable where
 
+import Data.Kind
 import Data.TypeFun
 import Data.Record
 import Data.Typeable
+
+-- | KindStar Typeable instance.
+deriving instance Typeable KindStar
+
+-- | (Id KindStar) Typeable instance.
+deriving instance Typeable KindStar =>
+  Typeable1 Id
 
 -- | Empty record scheme Typeable instance.
 instance Typeable style => 

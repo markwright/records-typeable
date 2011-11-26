@@ -21,7 +21,7 @@ source-repository    head
 Library
   Hs-Source-Dirs:    src
   Build-depends:     base >= 3 && <5,
-                     haskell98,
+                     base,
                      kinds == 0.0.*,
                      records == 0.1.*,
                      type-functions == 0.2.*
